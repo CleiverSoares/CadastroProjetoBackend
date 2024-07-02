@@ -7,6 +7,7 @@ use App\Models\CategoriaPessoaModel;
 use App\Models\PessoaModel;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\File; // Importar a facade File
 use Illuminate\Support\Str;
 
 class PessoaController extends Controller
@@ -21,6 +22,11 @@ class PessoaController extends Controller
 
             // Define o caminho para armazenar a imagem
             $fotoPath = 'storage/fotos/' . Str::uuid() . '.jpg'; // ou .png, dependendo do formato
+
+            // Verifica se o diretório existe, caso contrário, cria o diretório
+            if (!File::isDirectory(public_path('storage/fotos'))) {
+                File::makeDirectory(public_path('storage/fotos'), 0755, true, true);
+            }
 
             // Salva a imagem no diretório de armazenamento
             file_put_contents(public_path($fotoPath), $foto);
@@ -45,11 +51,13 @@ class PessoaController extends Controller
             ]);
         }
     }
+
     public function buscarTodos()
     {
         $pessoas = PessoaModel::with('categoriasInteresse')->get();
         return response()->json($pessoas);
     }
+
     public function excluir($id)
     {
         try {
@@ -79,5 +87,4 @@ class PessoaController extends Controller
             return response()->json(['error' => 'Erro ao desativar pessoa: ' . $e->getMessage()], 500);
         }
     }
-
 }
