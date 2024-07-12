@@ -24,3 +24,1043 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-07-02 00:44:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 00:54:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 01:04:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 01:14:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 01:24:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 01:34:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 01:44:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 01:54:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 02:04:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 02:14:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 02:24:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 02:34:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 02:44:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 02:54:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 03:04:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 03:14:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 03:24:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 03:34:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 03:44:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 03:54:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 04:04:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 04:14:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 04:24:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 04:34:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 04:44:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-02 04:54:05] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 22:37:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 22:46:25] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 22:56:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 23:06:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 23:16:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 23:26:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 23:36:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 23:46:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-11 23:56:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-12 00:06:24] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-12 00:16:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-12 00:26:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-12 00:36:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-07-12 00:46:23] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:67
+Stack trace:
+#0 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1041): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Container\Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1026): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 C:\Users\cleiv\Documents\cadastro-pessoas-projeto\CadastroProjetoBackend\cadastro-pessoas-projeto-beckend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67
+Stack trace:
+#0 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1041): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1026): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at C:\\Users\\cleiv\\Documents\\cadastro-pessoas-projeto\\CadastroProjetoBackend\\cadastro-pessoas-projeto-beckend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 

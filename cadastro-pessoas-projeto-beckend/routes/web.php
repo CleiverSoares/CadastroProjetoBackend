@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/cadastrar', [PessoaController::class, 'cadastrar'])->name('cadastrar');
 
+
+Route::put('/atualizar', [PessoaController::class, 'atualizar'])->name('atualizar');
+
+
 Route::get('/buscar-todos', [PessoaController::class, 'buscarTodos'])->name('buscarTodos');
 
 Route::get('/categorias', [CategoriaController::class, 'buscarCategorias'])->name('buscarCategorias');
