@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -17,6 +16,7 @@ return new class extends Migration
             $table->string('nome_pessoa', 250);
             $table->string('telefone_pessoa', 20);
             $table->string('email_pessoa', 250);
+            $table->string('observacoes_pessoa', 1000);
             $table->string('cpf_pessoa', 14);
             $table->string('foto_pessoa')->nullable();
             $table->date('data_nasc_pessoa');

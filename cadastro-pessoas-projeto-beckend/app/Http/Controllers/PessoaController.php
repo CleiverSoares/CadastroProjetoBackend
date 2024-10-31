@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CadastrarPessoaRequest;
+use App\Models\CategoriaModel;
 use App\Models\CategoriaPessoaModel;
+use App\Models\EnderecoModel;
 use App\Models\PessoaModel;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -14,9 +16,10 @@ use Illuminate\Support\Str;
 
 class PessoaController extends Controller
 {
-    public function cadastrar(CadastrarPessoaRequest $request)
+    public function cadastrar(Request $request)
     {
         $fotoPath = null;
+
         if ($request->has('foto')) {
             $fotoBase64 = $request->input('foto');
             $foto = base64_decode($fotoBase64);
@@ -36,6 +39,7 @@ class PessoaController extends Controller
             "telefone_pessoa" => $request->telefone,
             "data_nasc_pessoa" => $request->data,
             "email_pessoa" => $request->email,
+            "observacoes_pessoa" => $request->observacoes,
             "cpf_pessoa" => $request->cpf,
             "foto_pessoa" => $fotoPath,
         ]);
@@ -46,26 +50,129 @@ class PessoaController extends Controller
                 "id_categoria" => $idCategoria
             ]);
         }
+
+        if ($request->has('endereco')) {
+            EnderecoModel::create([
+                "id_pessoa" => $pessoa->id_pessoa,
+                "rua" => $request->endereco['rua'],
+                "cidade" => $request->endereco['cidade'],
+                "estado" => $request->endereco['estado'],
+                "cep" => $request->endereco['cep'],
+                "pais" => $request->endereco['pais'],
+                "numero" => $request->endereco['numero'],
+                "bairro" => $request->endereco['bairro'],
+            ]);
+        }
+
+        return response()->json(['message' => 'Pessoa e endereço cadastrados com sucesso'], 201);
+    }
+
+
+    public function atualizar(Request $request, $id)
+    {
+
+        try {
+            $pessoa = PessoaModel::findOrFail($id);
+
+            $fotoPath = $pessoa->foto_pessoa;
+
+            if ($request->has('foto') && !empty($request->input('foto'))) {
+                if ($fotoPath && File::exists(public_path($fotoPath))) {
+                    File::delete(public_path($fotoPath));
+                }
+
+                $fotoBase64 = $request->input('foto');
+                $foto = base64_decode($fotoBase64);
+                $fotoPath = 'storage/fotos/' . Str::uuid() . '.jpg';
+
+                if (!File::isDirectory(public_path('storage/fotos'))) {
+                    File::makeDirectory(public_path('storage/fotos'), 0755, true, true);
+                }
+
+                file_put_contents(public_path($fotoPath), $foto);
+            }
+
+            $dadosParaAtualizar = [];
+
+            if ($request->has('nome')) {
+                $dadosParaAtualizar['nome_pessoa'] = $request->nome;
+            }
+            if ($request->has('telefone')) {
+                $dadosParaAtualizar['telefone_pessoa'] = $request->telefone;
+            }
+            if ($request->has('data')) {
+                $dadosParaAtualizar['data_nasc_pessoa'] = Carbon::createFromFormat('Y-m-d', $request->data);
+            }
+            if ($request->has('email')) {
+                $dadosParaAtualizar['email_pessoa'] = $request->email;
+            }
+            if ($request->has('cpf')) {
+                $dadosParaAtualizar['cpf_pessoa'] = $request->cpf;
+            }
+            if ($request->has('observacoes')) {
+                $dadosParaAtualizar['observacoes_pessoa'] = $request->observacoes;
+            }
+
+            $dadosParaAtualizar['foto_pessoa'] = $fotoPath;
+
+            if (!empty($dadosParaAtualizar)) {
+                $pessoa->update($dadosParaAtualizar);
+            }
+
+            if ($request->has('endereco')) {
+                $enderecoData = $request->input('endereco');
+
+                $endereco = EnderecoModel::firstOrNew(['id_pessoa' => $pessoa->id_pessoa]);
+
+                $endereco->rua = $enderecoData['rua'] ?? $endereco->rua;
+                $endereco->cidade = $enderecoData['cidade'] ?? $endereco->cidade;
+                $endereco->estado = $enderecoData['estado'] ?? $endereco->estado;
+                $endereco->cep = $enderecoData['cep'] ?? $endereco->cep;
+                $endereco->pais = $enderecoData['pais'] ?? $endereco->pais;
+                $endereco->bairro = $enderecoData['bairro'] ?? $endereco->bairro;
+                $endereco->numero = $enderecoData['numero'] ?? $endereco->numero;
+
+                $endereco->save();
+            }
+
+            if ($request->has('categoria')) {
+                $deletedCount = CategoriaPessoaModel::where('id_pessoa', $pessoa->id_pessoa)->delete();
+                Log::info("Categorias removidas: {$deletedCount} para a pessoa: {$pessoa->id_pessoa}");
+
+                foreach ($request->categoria as $idCategoria) {
+                    CategoriaPessoaModel::create([
+                        "id_pessoa" => $pessoa->id_pessoa,
+                        "id_categoria" => $idCategoria
+                    ]);
+                    Log::info("Categoria adicionada: {$idCategoria} para a pessoa: {$pessoa->id_pessoa}");
+                }
+            }
+
+            return response()->json(['message' => 'Pessoa e endereço atualizados com sucesso'], 200);
+        } catch (ModelNotFoundException $e) {
+            return response()->json(['error' => 'Pessoa não encontrada'], 404);
+        } catch (\Exception $e) {
+            Log::error('Erro ao atualizar pessoa: ' . $e->getMessage());
+            return response()->json(['error' => 'Erro ao atualizar pessoa.'], 500);
+        }
     }
 
     public function buscarTodos()
     {
-        $pessoas = PessoaModel::with('categoriasInteresse')->get();
+        $pessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
         return response()->json($pessoas);
     }
+
 
     public function excluir($id)
     {
         try {
             $pessoa = PessoaModel::findOrFail($id);
 
-            // Verifica se a pessoa tem uma foto e se o arquivo existe
             if ($pessoa->foto_pessoa && file_exists(public_path($pessoa->foto_pessoa))) {
-                // Remove a foto do diretório
                 unlink(public_path($pessoa->foto_pessoa));
             }
 
-            // Remove a pessoa do banco de dados
             $pessoa->delete();
 
             return response()->json(['message' => 'Pessoa excluída com sucesso'], 200);
@@ -92,84 +199,7 @@ class PessoaController extends Controller
         }
     }
 
-    public function atualizar(Request $request, $id)
-    {
-        try {
-            // Obter a pessoa pelo ID
-            $pessoa = PessoaModel::findOrFail($id);
+  
 
-            // Manter o caminho da foto atual
-            $fotoPath = $pessoa->foto_pessoa;
 
-            // Verifica se a foto está presente no request
-            if ($request->has('foto') && !empty($request->input('foto'))) {
-                // Deletar a foto antiga, se existir
-                if ($fotoPath && File::exists(public_path($fotoPath))) {
-                    File::delete(public_path($fotoPath));
-                }
-
-                // Processar a nova foto
-                $fotoBase64 = $request->input('foto');
-                $foto = base64_decode($fotoBase64);
-                $fotoPath = 'storage/fotos/' . Str::uuid() . '.jpg';
-
-                if (!File::isDirectory(public_path('storage/fotos'))) {
-                    File::makeDirectory(public_path('storage/fotos'), 0755, true, true);
-                }
-
-                file_put_contents(public_path($fotoPath), $foto);
-            }
-
-            // Atualizar os dados da pessoa
-            $dadosParaAtualizar = [];
-
-            // Adicionar campos que devem ser atualizados, se presentes no request
-            if ($request->has('nome')) {
-                $dadosParaAtualizar['nome_pessoa'] = $request->nome;
-            }
-            if ($request->has('telefone')) {
-                $dadosParaAtualizar['telefone_pessoa'] = $request->telefone;
-            }
-            if ($request->has('data')) {
-                $dadosParaAtualizar['data_nasc_pessoa'] = Carbon::createFromFormat('Y-m-d', $request->data);
-            }
-            if ($request->has('email')) {
-                $dadosParaAtualizar['email_pessoa'] = $request->email;
-            }
-            if ($request->has('cpf')) {
-                $dadosParaAtualizar['cpf_pessoa'] = $request->cpf;
-            }
-
-            // Atualizar o caminho da foto, se foi alterado
-            $dadosParaAtualizar['foto_pessoa'] = $fotoPath;
-
-            // Atualizar os dados da pessoa, se houver alterações
-            if (!empty($dadosParaAtualizar)) {
-                $pessoa->update($dadosParaAtualizar);
-            }
-
-            // Atualizar as categorias, se fornecidas
-            if ($request->has('categoria')) {
-                // Remover categorias antigas
-                $deletedCount = CategoriaPessoaModel::where('id_pessoa', $pessoa->id_pessoa)->delete();
-                Log::info("Categorias removidas: {$deletedCount} para a pessoa: {$pessoa->id_pessoa}");
-
-                // Adicionar novas categorias
-                foreach ($request->categoria as $idCategoria) {
-                    CategoriaPessoaModel::create([
-                        "id_pessoa" => $pessoa->id_pessoa,
-                        "id_categoria" => $idCategoria
-                    ]);
-                    Log::info("Categoria adicionada: {$idCategoria} para a pessoa: {$pessoa->id_pessoa}");
-                }
-            }
-
-            return response()->json(['message' => 'Pessoa atualizada com sucesso'], 200);
-        } catch (ModelNotFoundException $e) {
-            return response()->json(['error' => 'Pessoa não encontrada'], 404);
-        } catch (\Exception $e) {
-            Log::error('Erro ao atualizar pessoa: ' . $e->getMessage()); // Registrar erro para depuração
-            return response()->json(['error' => 'Erro ao atualizar pessoa.'], 500);
-        }
-    }
 }

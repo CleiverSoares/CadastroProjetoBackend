@@ -20,8 +20,8 @@ Route::get('/buscar-todos', [PessoaController::class, 'buscarTodos'])->name('bus
 
 Route::get('/categorias', [CategoriaController::class, 'buscarCategorias'])->name('buscarCategorias');
 
-Route::get('/categorias-selecionadas', [CategoriaController::class, 'categoriasPessoas'])->name('categorias-pessoa');
 
+Route::get('/categorias-mais-selecionadas', [CategoriaController::class, 'buscarCategoriasSelecionadas']);
 
 Route::get('buscar-por-id/{id}', [PessoaController::class, 'buscarPorId'])->name('buscar-por-id');
 

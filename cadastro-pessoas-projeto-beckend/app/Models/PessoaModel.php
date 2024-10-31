@@ -40,10 +40,11 @@ class PessoaModel extends Model
         'codigo_verificacao',
         'cpf_pessoa',
         'data_nasc_pessoa',
-        'foto_pessoa'
+        'foto_pessoa',
+        'observacoes_pessoa'
     ];
     protected $hidden = ['pivot'];
-       protected $appends = ['idade'];
+    protected $appends = ['idade'];
 
     public function getIdadeAttribute()
     {
@@ -53,4 +54,10 @@ class PessoaModel extends Model
     {
         return $this->belongsToMany(CategoriaModel::class, 'categoria_pessoa', 'id_pessoa', 'id_categoria');
     }
+    public function endereco()
+    {
+        return $this->hasOne(EnderecoModel::class, 'id_pessoa', 'id_pessoa');
+    }
+
+
 }
