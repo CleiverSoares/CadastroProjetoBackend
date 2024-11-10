@@ -11,19 +11,20 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\File; // Importar a facade File
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class PessoaController extends Controller
 {
     public function cadastrar(Request $request)
     {
+        // Verificar todos os dados recebidos
         $fotoPath = null;
 
+        // Lógica para salvar a foto
         if ($request->has('foto')) {
             $fotoBase64 = $request->input('foto');
             $foto = base64_decode($fotoBase64);
-
             $fotoPath = 'storage/fotos/' . Str::uuid() . '.jpg';
 
             if (!File::isDirectory(public_path('storage/fotos'))) {
@@ -33,6 +34,7 @@ class PessoaController extends Controller
             file_put_contents(public_path($fotoPath), $foto);
         }
 
+        // Criando a pessoa
         $pessoa = PessoaModel::create([
             "uuid_pessoa" => Str::uuid(),
             "nome_pessoa" => $request->nome,
@@ -42,15 +44,28 @@ class PessoaController extends Controller
             "observacoes_pessoa" => $request->observacoes,
             "cpf_pessoa" => $request->cpf,
             "foto_pessoa" => $fotoPath,
+            "alguem_trabalha" => $request->alguem_trabalha,
+            "data_entrada_projeto" => $request->data_entrada_projeto,
+            "escolaridade" => $request->escolaridade,
+            "qtd_pessoas_na_casa" => $request->qtd_pessoas_na_casa,
+            "telefone_emergencia" => $request->telefone_emergencia,
+            "deficiencia_tem_deficiencia" => $request->deficiencia['tem_deficiencia'],
+            "deficiencia_qual_deficiencia" => $request->deficiencia['qual_deficiencia'],
+            "medicamento_tem_alergia" => $request->medicamento['tem_alergia'],
+            "medicamento_qual_medicamento_tem_alergia" => $request->medicamento['qual_medicamento_tem_alergia']
         ]);
 
-        foreach ($request->categoria as $idCategoria) {
-            CategoriaPessoaModel::create([
-                "id_pessoa" => $pessoa->id_pessoa,
-                "id_categoria" => $idCategoria
-            ]);
+        // Criando as categorias associadas à pessoa
+        if ($request->has('categoria')) {
+            foreach ($request->categoria as $idCategoria) {
+                CategoriaPessoaModel::create([
+                    "id_pessoa" => $pessoa->id_pessoa,
+                    "id_categoria" => $idCategoria
+                ]);
+            }
         }
 
+        // Salvando o endereço, incluindo o complemento
         if ($request->has('endereco')) {
             EnderecoModel::create([
                 "id_pessoa" => $pessoa->id_pessoa,
@@ -61,90 +76,70 @@ class PessoaController extends Controller
                 "pais" => $request->endereco['pais'],
                 "numero" => $request->endereco['numero'],
                 "bairro" => $request->endereco['bairro'],
+                "complemento_endereco" => $request->endereco['complemento_endereco'] ?? '', // Adicionando o complemento
             ]);
         }
 
         return response()->json(['message' => 'Pessoa e endereço cadastrados com sucesso'], 201);
     }
 
-
     public function atualizar(Request $request, $id)
     {
-
         try {
             $pessoa = PessoaModel::findOrFail($id);
-
             $fotoPath = $pessoa->foto_pessoa;
 
+            // Lógica para atualizar a foto
             if ($request->has('foto') && !empty($request->input('foto'))) {
-                if ($fotoPath && File::exists(public_path($fotoPath))) {
+                if ($fotoPath && file_exists(public_path($fotoPath))) {
                     File::delete(public_path($fotoPath));
                 }
-
                 $fotoBase64 = $request->input('foto');
                 $foto = base64_decode($fotoBase64);
                 $fotoPath = 'storage/fotos/' . Str::uuid() . '.jpg';
-
                 if (!File::isDirectory(public_path('storage/fotos'))) {
                     File::makeDirectory(public_path('storage/fotos'), 0755, true, true);
                 }
-
                 file_put_contents(public_path($fotoPath), $foto);
             }
 
-            $dadosParaAtualizar = [];
+            $dadosParaAtualizar = ['foto_pessoa' => $fotoPath];
 
-            if ($request->has('nome')) {
-                $dadosParaAtualizar['nome_pessoa'] = $request->nome;
-            }
-            if ($request->has('telefone')) {
-                $dadosParaAtualizar['telefone_pessoa'] = $request->telefone;
-            }
-            if ($request->has('data')) {
-                $dadosParaAtualizar['data_nasc_pessoa'] = Carbon::createFromFormat('Y-m-d', $request->data);
-            }
-            if ($request->has('email')) {
-                $dadosParaAtualizar['email_pessoa'] = $request->email;
-            }
-            if ($request->has('cpf')) {
-                $dadosParaAtualizar['cpf_pessoa'] = $request->cpf;
-            }
-            if ($request->has('observacoes')) {
-                $dadosParaAtualizar['observacoes_pessoa'] = $request->observacoes;
+            $campos = [
+                'nome_pessoa' => 'nome',
+                'telefone_pessoa' => 'telefone',
+                'data_nasc_pessoa' => 'data',
+                'email_pessoa' => 'email',
+                'cpf_pessoa' => 'cpf',
+                'observacoes_pessoa' => 'observacoes',
+                'alguem_trabalha' => 'alguem_trabalha',
+                'data_entrada_projeto' => 'data_entrada_projeto',
+                'escolaridade' => 'escolaridade',
+                'qtd_pessoas_na_casa' => 'qtd_pessoas_na_casa',
+                'telefone_emergencia' => 'telefone_emergencia'
+            ];
+
+            foreach ($campos as $campoBD => $campoRequest) {
+                if ($request->has($campoRequest)) {
+                    $dadosParaAtualizar[$campoBD] = $request->input($campoRequest);
+                }
             }
 
-            $dadosParaAtualizar['foto_pessoa'] = $fotoPath;
-
-            if (!empty($dadosParaAtualizar)) {
-                $pessoa->update($dadosParaAtualizar);
-            }
+            $pessoa->update($dadosParaAtualizar);
 
             if ($request->has('endereco')) {
                 $enderecoData = $request->input('endereco');
-
                 $endereco = EnderecoModel::firstOrNew(['id_pessoa' => $pessoa->id_pessoa]);
-
-                $endereco->rua = $enderecoData['rua'] ?? $endereco->rua;
-                $endereco->cidade = $enderecoData['cidade'] ?? $endereco->cidade;
-                $endereco->estado = $enderecoData['estado'] ?? $endereco->estado;
-                $endereco->cep = $enderecoData['cep'] ?? $endereco->cep;
-                $endereco->pais = $enderecoData['pais'] ?? $endereco->pais;
-                $endereco->bairro = $enderecoData['bairro'] ?? $endereco->bairro;
-                $endereco->numero = $enderecoData['numero'] ?? $endereco->numero;
-
-                $endereco->save();
+                $endereco->fill($enderecoData)->save();
             }
 
-            if ($request->has('categoria')) {
-                $deletedCount = CategoriaPessoaModel::where('id_pessoa', $pessoa->id_pessoa)->delete();
-                Log::info("Categorias removidas: {$deletedCount} para a pessoa: {$pessoa->id_pessoa}");
-
+            if ($request->has('categoria') && is_array($request->categoria)) {
+                CategoriaPessoaModel::where('id_pessoa', $pessoa->id_pessoa)->delete();
                 foreach ($request->categoria as $idCategoria) {
                     CategoriaPessoaModel::create([
                         "id_pessoa" => $pessoa->id_pessoa,
                         "id_categoria" => $idCategoria
                     ]);
-                    Log::info("Categoria adicionada: {$idCategoria} para a pessoa: {$pessoa->id_pessoa}");
                 }
             }
 
@@ -157,18 +152,172 @@ class PessoaController extends Controller
         }
     }
 
+
+
+
     public function buscarTodos()
     {
         $pessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
         return response()->json($pessoas);
     }
+    public function bairrosMaisEscolhidos()
+    {
+        $todasPessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
 
+        if ($todasPessoas instanceof \Illuminate\Support\Collection) {
+            $bairrosAgrupados = $todasPessoas->groupBy(function ($pessoa) {
+                return $pessoa->endereco->bairro;
+            });
+
+            $bairrosContagem = $bairrosAgrupados->map(function ($grupo) {
+                return $grupo->count();
+            });
+
+            $resultado = $bairrosContagem->sortDesc();
+
+            return response()->json($resultado);
+        } else {
+            return response()->json(['error' => 'Erro ao processar os dados'], 500);
+        }
+    }
+
+
+    public function alergiaMedicamentos()
+    {
+
+        $todasPessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
+
+
+        if ($todasPessoas instanceof \Illuminate\Support\Collection) {
+
+            $medicamentosAgrupados = $todasPessoas->groupBy(function ($pessoa) {
+
+                return $pessoa->medicamento_tem_alergia ?? 'Não informado';
+            });
+
+            $medicamentosContagem = $medicamentosAgrupados->map(function ($grupo) {
+                return $grupo->count();
+            });
+
+            $resultado = $medicamentosContagem->sortDesc();
+
+            return response()->json($resultado);
+        } else {
+            return response()->json(['error' => 'Erro ao processar os dados'], 500);
+        }
+    }
+
+    public function temDeficiencia()
+    {
+        $todasPessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
+
+        if ($todasPessoas instanceof \Illuminate\Support\Collection) {
+            $deficienciasAgrupadas = $todasPessoas->groupBy(function ($pessoa) {
+                return $pessoa->deficiencia_tem_deficiencia ?? 'Não informado';
+            });
+
+            $deficienciaContagem = $deficienciasAgrupadas->map(function ($grupo) {
+                return $grupo->count();
+            });
+
+            $resultado = $deficienciaContagem->sortDesc();
+
+            return response()->json($resultado);
+        } else {
+            return response()->json(['error' => 'Erro ao processar os dados'], 500);
+        }
+    }
+    public function idadePorFaixa()
+    {
+        $todasPessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
+
+
+        if ($todasPessoas instanceof \Illuminate\Support\Collection) {
+
+            $faixaEtariaAgrupada = $todasPessoas->groupBy(function ($pessoa) {
+                $idade = $pessoa->idade;
+
+
+                if ($idade >= 18 && $idade <= 25) {
+                    return '18-25';
+                } elseif ($idade >= 26 && $idade <= 35) {
+                    return '26-35';
+                } elseif ($idade >= 36 && $idade <= 45) {
+                    return '36-45';
+                } elseif ($idade >= 46 && $idade <= 60) {
+                    return '46-60';
+                } else {
+                    return '60+';
+                }
+            });
+
+            $faixaEtariaContagem = $faixaEtariaAgrupada->map(function ($grupo) {
+                return $grupo->count();
+            });
+
+
+            $resultado = $faixaEtariaContagem->sortDesc();
+
+
+            return response()->json($resultado);
+        } else {
+
+            return response()->json(['error' => 'Erro ao processar os dados'], 500);
+        }
+    }
+    public function escolaridadeAgrupada()
+    {
+
+        $todasPessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
+
+
+        if ($todasPessoas instanceof \Illuminate\Support\Collection) {
+
+            $escolaridadeAgrupada = $todasPessoas->groupBy(function ($pessoa) {
+                return $pessoa->escolaridade;
+            });
+
+            $escolaridadeContagem = $escolaridadeAgrupada->map(function ($grupo) {
+                return $grupo->count();
+            });
+
+            $resultado = $escolaridadeContagem->sortDesc();
+
+            return response()->json($resultado);
+        } else {
+            return response()->json(['error' => 'Erro ao processar os dados'], 500);
+        }
+    }
+
+    public function alguemTrabalhaAgrupado()
+{
+
+    $todasPessoas = PessoaModel::with(['categoriasInteresse', 'endereco'])->get();
+
+
+    if ($todasPessoas instanceof \Illuminate\Support\Collection) {
+        $alguemTrabalhaAgrupado = $todasPessoas->groupBy(function ($pessoa) {
+            return $pessoa->alguem_trabalha;
+        });
+
+        $alguemTrabalhaContagem = $alguemTrabalhaAgrupado->map(function ($grupo) {
+            return $grupo->count(); // Conta o número de pessoas em cada grupo
+        });
+
+        $resultado = $alguemTrabalhaContagem->sortDesc();
+
+        return response()->json($resultado);
+    } else {
+        return response()->json(['error' => 'Erro ao processar os dados'], 500);
+    }
+}
 
     public function excluir($id)
     {
         try {
             $pessoa = PessoaModel::findOrFail($id);
 
+            // Remover foto
             if ($pessoa->foto_pessoa && file_exists(public_path($pessoa->foto_pessoa))) {
                 unlink(public_path($pessoa->foto_pessoa));
             }
@@ -198,8 +347,4 @@ class PessoaController extends Controller
             return response()->json(['error' => 'Erro ao desativar pessoa: ' . $e->getMessage()], 500);
         }
     }
-
-  
-
-
 }

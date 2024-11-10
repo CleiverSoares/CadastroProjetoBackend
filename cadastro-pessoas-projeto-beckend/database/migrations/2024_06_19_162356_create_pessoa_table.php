@@ -22,6 +22,21 @@ return new class extends Migration {
             $table->date('data_nasc_pessoa');
             $table->boolean('ativo')->default(true);
             $table->timestamps();
+
+            // Novos campos para a pessoa
+            $table->string('alguem_trabalha')->nullable();  // Campo 'alguem_trabalha'
+            $table->date('data_entrada_projeto')->nullable(); // Campo 'data_entrada_projeto'
+            $table->string('escolaridade')->nullable();  // Campo 'escolaridade'
+            $table->integer('qtd_pessoas_na_casa')->nullable();  // Campo 'qtd_pessoas_na_casa'
+            $table->string('telefone_emergencia', 20)->nullable();  // Campo 'telefone_emergencia'
+
+            // Campos para deficiência
+            $table->string('deficiencia_tem_deficiencia')->nullable();
+            $table->string('deficiencia_qual_deficiencia')->nullable();
+
+            // Campos para medicamento
+            $table->string('medicamento_tem_alergia')->nullable();
+            $table->string('medicamento_qual_medicamento_tem_alergia')->nullable();
         });
     }
 

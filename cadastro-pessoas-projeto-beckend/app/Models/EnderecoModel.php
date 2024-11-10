@@ -20,7 +20,8 @@ class EnderecoModel extends Model
         'cep',
         'pais',
         'numero',
-        'bairro'
+        'bairro',
+        'complemento_endereco'
     ];
 
     public function pessoa()

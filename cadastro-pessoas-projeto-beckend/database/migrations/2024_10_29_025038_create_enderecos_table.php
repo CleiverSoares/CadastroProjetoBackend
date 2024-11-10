@@ -20,6 +20,7 @@ return new class extends Migration {
             $table->string('numero');
             $table->string('bairro');
             $table->string('pais');
+            $table->string('complemento_endereco');
             $table->timestamps();
 
             $table->foreign('id_pessoa')->references('id_pessoa')->on('pessoa')->onDelete('cascade');
