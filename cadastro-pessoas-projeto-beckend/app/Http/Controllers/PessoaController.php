@@ -166,7 +166,7 @@ class PessoaController extends Controller
 
         if ($todasPessoas instanceof \Illuminate\Support\Collection) {
             $bairrosAgrupados = $todasPessoas->groupBy(function ($pessoa) {
-                return $pessoa->endereco->bairro;
+                return $pessoa->endereco?->bairro ?? 'Sem Bairro';
             });
 
             $bairrosContagem = $bairrosAgrupados->map(function ($grupo) {
@@ -180,6 +180,7 @@ class PessoaController extends Controller
             return response()->json(['error' => 'Erro ao processar os dados'], 500);
         }
     }
+
 
 
     public function alergiaMedicamentos()
